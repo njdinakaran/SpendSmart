@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_pg"
+    android:weightSum="3">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIncome">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Add New Income"
+        android:textColor="@color/purple"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="122dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Amount"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/income_amount"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="92dp"
+        android:background="@drawable/input_box"
+        android:hint="Enter Amount here"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Note:"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_amount" />
+
+    <EditText
+        android:id="@+id/income_note"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/input_box"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Note Here"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:lines="3"
+        android:maxLines="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="false"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Date:"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toStartOf="@+id/income_date"
+        app:layout_constraintTop_toBottomOf="@+id/income_note" />
+
+    <TextView
+
+        android:id="@+id/income_date"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/input_box"
+        android:clickable="true"
+        android:hint="DD-MM-YY"
+        android:textColor="@color/black"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/income_note"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/income_note"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/income_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/custom_keys"
+        android:text="Add Income"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/inc_dash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_date"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <Button
+        android:id="@+id/inc_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Dash Board"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

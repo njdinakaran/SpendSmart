@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/user_pg"
+        tools:context=".User_Page">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="User Page"
+            android:textColor="@color/purple"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="name"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/useremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="email address"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/userpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="104dp"
+            android:drawableLeft="@drawable/outline_mode_edit_outline_24"
+            android:text="Change Password"
+            android:textColor="@color/purple"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/userdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="180dp"
+            android:text="Delete Account" />
+
+        <Button
+            android:id="@+id/movepg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="36dp"
+            android:text="DashBoard" />
+    </LinearLayout>
+</ScrollView>

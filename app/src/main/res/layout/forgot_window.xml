@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogForgot"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <TextView
+            android:id="@+id/forgotTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Forgot Password"
+            android:textColor="@color/purple"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:text="Enter your email address:"
+            android:textColor="@color/purple"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/forgot_email"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/purple"
+            android:maxLines="1"
+            android:hint="Enter here"
+            android:textColor="@color/purple"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="8dp"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

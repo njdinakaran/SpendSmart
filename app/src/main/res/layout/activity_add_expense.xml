@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/expensebg">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    tools:context=".AddExpense">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="Add New Expense"
+        android:textColor="@color/ebony"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Amount:  "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/expense_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/expense_amount"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_box"
+        android:hint="Enter Amount here"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/exp_category"
+        app:layout_constraintStart_toStartOf="@+id/exp_category"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Category"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/exp_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expense_amount" />
+
+    <Spinner
+        android:id="@+id/exp_category"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/expense_note"
+        app:layout_constraintStart_toStartOf="@+id/expense_note"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Note: "
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/expense_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exp_category" />
+
+    <EditText
+        android:id="@+id/expense_note"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_box"
+        android:hint="Enter Note here"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Date: "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/expense_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expense_note" />
+
+    <TextView
+        android:id="@+id/expense_date"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_box"
+        android:hint="DD-MM-YYYY"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/exp_submit"
+        app:layout_constraintEnd_toEndOf="@+id/expense_note"
+        app:layout_constraintStart_toStartOf="@+id/expense_note"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/exp_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/custom_keys"
+        android:text="Add Expense"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/exp_dash"
+        app:layout_constraintEnd_toEndOf="@+id/expense_date"
+        app:layout_constraintTop_toBottomOf="@+id/expense_date" />
+
+    <Button
+        android:id="@+id/exp_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dash Board"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exp_submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
