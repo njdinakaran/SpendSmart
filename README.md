@@ -1,4 +1,5 @@
 **💰 Spend Smart – Your Ultimate Expense Tracker 📊**
+
 Spend Smart is a powerful yet simple Android expense tracker designed to help you take control of your finances with ease. Whether you're budgeting, analyzing your spending habits, or just keeping track of daily expenses, this app makes financial management effortless.
 
 🚀 Features
